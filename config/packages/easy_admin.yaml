@@ -4,4 +4,4 @@ easy_admin:
         - App\Entity\Competence 
         - App\Entity\Profil
         - App\Entity\Project
-        - App\Entity\Technologie
+        - App\Entity\Techonologie
