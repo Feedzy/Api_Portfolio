@@ -1,0 +1,56 @@
+<?php return array(PHP_INT_MAX, static function () {
+
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Serializer\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\ClassMetadata')),
+            clone ($p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata')),
+            clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+            clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+            clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+            clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+            clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+            clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+            clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+            clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+            clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+            clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        ],
+        null,
+        [
+            'stdClass' => [
+                'name' => [
+                    'App\\Entity\\Profil',
+                    'id',
+                    'Nom',
+                    'Prenom',
+                    'Age',
+                    'Profession',
+                    'Situation_matrimonial',
+                    'nom',
+                    'prenom',
+                    'age',
+                    'profession',
+                    'situationMatrimonial',
+                ],
+                'attributesMetadata' => [
+                    [
+                        'id' => $o[1],
+                        'Nom' => $o[2],
+                        'Prenom' => $o[3],
+                        'Age' => $o[4],
+                        'Profession' => $o[5],
+                        'Situation_matrimonial' => $o[6],
+                        'nom' => $o[7],
+                        'prenom' => $o[8],
+                        'age' => $o[9],
+                        'profession' => $o[10],
+                        'situationMatrimonial' => $o[11],
+                    ],
+                ],
+            ],
+        ],
+        $o[0],
+        []
+    );
+
+});

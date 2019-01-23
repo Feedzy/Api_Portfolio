@@ -1,0 +1,130 @@
+<?php return array(PHP_INT_MAX, static function () {
+
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+            clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'name' => [
+                    'App\\Entity\\Profil',
+                ],
+                'namespace' => [
+                    'App\\Entity',
+                ],
+                'rootEntityName' => [
+                    'App\\Entity\\Profil',
+                ],
+                'customRepositoryClassName' => [
+                    'App\\Repository\\ProfilRepository',
+                ],
+                'identifier' => [
+                    [
+                        'id',
+                    ],
+                ],
+                'generatorType' => [
+                    4,
+                ],
+                'fieldMappings' => [
+                    [
+                        'id' => [
+                            'fieldName' => 'id',
+                            'type' => 'integer',
+                            'scale' => 0,
+                            'length' => null,
+                            'unique' => false,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'id' => true,
+                            'columnName' => 'id',
+                        ],
+                        'Nom' => [
+                            'fieldName' => 'Nom',
+                            'type' => 'string',
+                            'scale' => 0,
+                            'length' => 255,
+                            'unique' => false,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'columnName' => 'nom',
+                        ],
+                        'Prenom' => [
+                            'fieldName' => 'Prenom',
+                            'type' => 'string',
+                            'scale' => 0,
+                            'length' => 255,
+                            'unique' => false,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'columnName' => 'prenom',
+                        ],
+                        'Age' => [
+                            'fieldName' => 'Age',
+                            'type' => 'string',
+                            'scale' => 0,
+                            'length' => 255,
+                            'unique' => false,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'columnName' => 'age',
+                        ],
+                        'Profession' => [
+                            'fieldName' => 'Profession',
+                            'type' => 'string',
+                            'scale' => 0,
+                            'length' => 255,
+                            'unique' => false,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'columnName' => 'profession',
+                        ],
+                        'Situation_matrimonial' => [
+                            'fieldName' => 'Situation_matrimonial',
+                            'type' => 'string',
+                            'scale' => 0,
+                            'length' => 255,
+                            'unique' => false,
+                            'nullable' => false,
+                            'precision' => 0,
+                            'columnName' => 'situation_matrimonial',
+                        ],
+                    ],
+                ],
+                'fieldNames' => [
+                    [
+                        'id' => 'id',
+                        'nom' => 'Nom',
+                        'prenom' => 'Prenom',
+                        'age' => 'Age',
+                        'profession' => 'Profession',
+                        'situation_matrimonial' => 'Situation_matrimonial',
+                    ],
+                ],
+                'columnNames' => [
+                    [
+                        'id' => 'id',
+                        'Nom' => 'nom',
+                        'Prenom' => 'prenom',
+                        'Age' => 'age',
+                        'Profession' => 'profession',
+                        'Situation_matrimonial' => 'situation_matrimonial',
+                    ],
+                ],
+                'table' => [
+                    [
+                        'name' => 'profil',
+                    ],
+                ],
+                'idGenerator' => [
+                    $o[1],
+                ],
+            ],
+        ],
+        $o[0],
+        []
+    );
+
+});

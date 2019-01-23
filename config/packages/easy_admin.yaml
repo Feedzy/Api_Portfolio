@@ -1,7 +1,70 @@
 easy_admin:
     entities:
-        # List the entity class name you want to manage
-        - App\Entity\Competence 
-        - App\Entity\Profil
-        - App\Entity\Project
-        - App\Entity\Techonologie
+        Formation:
+            class: App\Entity\Formation
+            list:
+                fields:
+                    - 'id'
+                    - 'Ecole'
+                    - 'Annees'
+                    - 'Type_formation'
+
+
+        Competence:
+            class: App\Entity\Competence
+            list:
+                fields:
+                    - 'id'
+                    - 'Nom'
+                    - { property: 'image', type: 'image', base_path: '%app.path.image%' }
+            show:
+                fields:
+                    - { property: 'image', type: 'image', base_path: '%app.path.image%' }
+
+            form:
+                fields:
+                    - 'Nom'
+                    - { property: 'imageFile', type: 'vich_file' }
+
+
+        Project:
+            class: App\Entity\Project
+            list:
+                fields:
+                    - 'Nom_Project'
+                    - 'Description'
+                    - { property: 'image', type: 'image', base_path: '%app.path.image%' }
+            show:
+                fields:
+                    - { property: 'image', type: 'image', base_path: '%app.path.image%' }
+
+            form:
+                fields:
+                    - 'Nom_Project'
+                    - 'Description'
+                    - { property: 'imageFile', type: 'vich_file' }
+
+
+        Profil:
+            class: App\Entity\Profil
+            list:
+                fields:
+                    - 'Nom'
+                    - 'Prenom'
+                    - 'Age'
+                    - 'Profession'
+                    - 'Situation_matrimonial'
+                    - { property: 'image', type: 'image', base_path: '%app.path.image%' }
+
+            show:
+                fields:
+                    - { property: 'image', type: 'image', base_path: '%app.path.image%' }
+
+            form:
+                fields:
+                    - 'Nom'
+                    - 'Prenom'
+                    - 'Age'
+                    - 'Profession'
+                    - 'Situation_matrimonial'
+                    - { property: 'imageFile', type: 'vich_file'}

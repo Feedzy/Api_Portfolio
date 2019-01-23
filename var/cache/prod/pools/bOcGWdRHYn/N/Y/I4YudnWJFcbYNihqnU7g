@@ -1,0 +1,50 @@
+<?php return array(PHP_INT_MAX, static function () {
+
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Serializer\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\ClassMetadata')),
+            clone ($p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata')),
+            clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+            clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+            clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+            clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+            clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+            clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+            clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+            clone $p['Symfony\\Component\\Serializer\\Mapping\\AttributeMetadata'],
+        ],
+        null,
+        [
+            'stdClass' => [
+                'name' => [
+                    'App\\Entity\\User',
+                    'id',
+                    'Username',
+                    'PlainPassword',
+                    'Password',
+                    'roles',
+                    'username',
+                    'password',
+                    'plainPassword',
+                    'salt',
+                ],
+                'attributesMetadata' => [
+                    [
+                        'id' => $o[1],
+                        'Username' => $o[2],
+                        'PlainPassword' => $o[3],
+                        'Password' => $o[4],
+                        'roles' => $o[5],
+                        'username' => $o[6],
+                        'password' => $o[7],
+                        'plainPassword' => $o[8],
+                        'salt' => $o[9],
+                    ],
+                ],
+            ],
+        ],
+        $o[0],
+        []
+    );
+
+});
